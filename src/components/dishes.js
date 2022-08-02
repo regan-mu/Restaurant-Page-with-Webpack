@@ -5,7 +5,7 @@ import Rice from "../fried-rice.png";
 
 const dishesPage = () => {
     let matokeDescription = "East african dish made from unripe bananas cooked, marshed and served with stew";
-    let thufuDescription = "Soup is a primarily liquid food, generally served warm or hot that is made by combining ingredients.";
+    let thufuDescription = "Thufu is a primarily liquid food, generally served warm or hot that is made by combining ingredients.";
     let riceDescription = "The starchy seeds of an annual southeast Asian cereal grass that are cooked and used for food";
 
     const dishesMain = document.createElement("div");
