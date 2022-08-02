@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Square+Peg&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.6) 43%, rgba(0,0,0,0.6) 100%),
+        url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Square Peg', cursive;
+}
+.main {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.main-header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+.main-header .header-inner {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    row-gap: 20px;
+    font-weight: bold;
+    color: #F94c66;
+}
+.main-header .header-inner .logo {
+    font-size: 3.5rem;
+}
+.main-header .header-inner .menu-items {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.main-header .header-inner .menu-items .item {
+    color: #F94c66;
+    font-size: 2rem;
+    position: relative;
+    padding: 5px 10px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+.main-header .header-inner .menu-items .item::after {
+    content: "";
+    position: absolute;
+    background-color: #F94c66;
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.main-header .header-inner .menu-items .item:hover::after {
+    transform: scale(1);
+}
+
+.card {
+    width: 650px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 64px auto;
+    padding: 32px;
+    text-align: center;
+}
+
+.card .card-top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: #53BF9D;
+    border-bottom: 0.5px solid rgb(89, 89, 89);
+    padding: 0 0 32px;
+    font-weight: bold;
+}
+.card .card-top .title {
+    font-size: 3.5rem;
+    letter-spacing: 2.5px;
+    
+}
+.card .card-top .sub-title {
+    font-weight: lighter;
+    font-size: 2rem;
+    letter-spacing: 1.3px;
+}
+.card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 32px auto;
+    margin-bottom: 0;
+}
+
+/*---------- Style the dishes component ---------*/
+.about-main {
+    width: 80%;
+    height: 100%;
+    margin: 48px auto;
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    gap: 16px;
+}
+.about-main .dish-card {
+    position: relative;
+    padding: 32px 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-family: "Roboto";
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.about-main .dish-card:hover {
+    transform: scale(1.05);
+}
+.about-main .dish-card img {
+    width: 100px;
+    height: 100px;
+}
+.about-main .dish-card .dish-name {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 8px 0 16px;
+    letter-spacing: 1.3px;
+}
+.about-main .dish-card .description {
+    font-weight: lighter;
+    color: rgb(196, 196, 196);
+}
+.about-main .dish-card .dish-price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 32px;
+    background-color: #F94c66;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 12px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.contact-card {
+    position: relative;
+    width: 450px;
+    height: 400px;
+    margin: 32px auto;
+    color: #F94c66;
+    padding: 32px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.contact-card .card-header {
+    font-size: 3.5rem;
+    margin: 0 0 8px;
+    font-weight: bold;
+}
+.contact-card p {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.contact-card .socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 160px;
+    height: 32px;
+    margin: 32px auto;
+}
+.contact-card .socials img {
+    width: 40px;
+    height: 40px;
+}
+
+
+footer {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #53BF9D;
+    font-size: 1.6rem;
+}
